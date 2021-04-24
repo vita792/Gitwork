@@ -1,0 +1,56 @@
+THe instruction for Git (and GitHub)
+
+Download Git and create an account into GitHub.
+Create file .gitignore in a headfolder of your project.
+Write there all files and folders which muust be invisible for Git
+(.idea/ .class .war .jar .ear ets).
+
+1. When you start your project, you may start Git.
+	git init
+
+2. Some settings for your identify in community
+	git config --global user.name "Name LastName"
+	git config --global user.email "my-email@email.com"
+
+2a. To check files for manipulation
+	git status
+
+3. Adding one file or all files
+	git add way_my_file_name.txt
+	or
+	git add --all
+
+4. Commit for Git whith comment your adding file(s)
+	git commit -m "Initilize Git and first commitment"
+
+5. Create new remote repository
+	git remote add name_for_remote_repository url_addres_github_new_repository
+
+5a. Check which repository is active
+	git remote
+
+6. Add files from Git to remote repository on GitHub
+	git push name_of_remote_repository name_of_branch
+	(after that command the program ask your login and password for GitHub)
+
+7. Put changes to exsist remote repository
+	git tag "name_version_0.1.2"
+
+8. Create new branch
+	git branch name_of_new_branch
+
+8a. See which branch is active
+	git branch
+
+8b. Change active branch
+	git checkout name_of_branch_we_wont_work
+
+9. If you want to connect your branch to another one
+	git marge name_wonderer_branch
+
+
+9a. Delete branch (usually after marge)
+	git branch -D name_of_branch_you_decided_to_ delete
+
+10. To see HISTORY of changes
+	git log
